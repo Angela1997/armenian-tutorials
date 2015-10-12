@@ -36,7 +36,7 @@
 **git commit -m** *'compiler: bug fixes'*  
 **git push origin** *new-branch-name*  
 
-First Header  | Second Header
+Հրաման  | Նշանակություն
 ------------- | -------------
-Content Cell  | Content Cell
-Content Cell  | Content Cell
+**git add** *.*  | Ինդեքսավորում է բոլոր փոփոխված ֆայլավելացնում է file ֆայլը  Content Cell
+**git add** *file1* *file2*  | ավելացնում է file1 եւ file2 ֆայլերը  
