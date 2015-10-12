@@ -43,11 +43,11 @@
 
 ### Պարզագույն հրամանների օգտագործման օրինակներ
 ```bash
-git clone https://github.com/username/repository  
+git clone https://github.com/otanim/armenian-tutorials
 cd repository  
 git checkout -b new-branch-name  
 git add .
-git commit -m 'compiler: bug fixes'  
+git commit -m 'minor fixes: bolind'  
 git push origin new-branch-name  
 ```
 
