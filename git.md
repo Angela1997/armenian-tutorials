@@ -49,9 +49,9 @@ cd repository
 ```
 ### փոփոխությունների կատարում եւ վերբեռնում
 ```bash
-git checkout -b new-branch-name  
+git checkout -b ubunutu-commands
 git add .
-git commit -m 'minor fixes: bolding'  
-git push origin new-branch-name  
+git commit -m 'new section create'  
+git push origin ubunutu-commands  
 ```
 
