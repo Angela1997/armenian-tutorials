@@ -41,13 +41,17 @@
 **git diff**  | ցուցադրում է փոփոխությունները 
 **git branch**  | ցուցադրում է local branch-երի ցանկը
 
-### Պարզագույն հրամանների օգտագործման օրինակներ
+## Պարզագույն հրամանների օգտագործման օրինակներ
+### Repository-ի բեռնում եւ նախապատրաստում աշխատանքի
 ```bash
 git clone https://github.com/otanim/armenian-tutorials
-cd repository  
+cd repository
+```
+### փոփոխությունների կատարում եւ վերբեռնում
+```bash
 git checkout -b new-branch-name  
 git add .
-git commit -m 'minor fixes: bolind'  
+git commit -m 'minor fixes: bolding'  
 git push origin new-branch-name  
 ```
 
