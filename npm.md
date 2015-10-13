@@ -1,58 +1,23 @@
 ## GIT հրամաններ
 
-### Ֆայլերի ինդեքսավորում
+### Սկրիպտների մեկնարկ
 Հրաման  | Նշանակություն
 ------------- | -------------
-| **npm install**
-**npm i** | ինդեքսավորում է բոլոր փոփոխված ֆայլերը  |
-| **git add** *file*  | ավելացնում է **file** ֆայլը  |
-| **git add** *file1* *file2*  | ավելացնում է **file1** եւ **file2** ֆայլերը  |
+**npn run** *command* | մեկնարկում է **package.json** ֆայլի **scripts**-ում գրված ***command*** -ին համապատասխանող հրամանը
+**npm start**  | մեկնարկում է **package.json** ֆայլի **scripts**-ում գրված **start**-ին համապատասխանող հրամանը
 
-### Ֆայլերի ջնջում
+### Package—ների տեղադրում
 Հրաման  | Նշանակություն
 ------------- | -------------
-**git rm** *file*  | ջնջում է **file** ֆայլը  
-**git rm** *file1* *file2*  | ջնջում է **file1** եւ **file2** ֆայլերը
+**npm install** *կամ* **npm i**  | local (նույն պրոյեկտի մեջ` **node_modules** folder-ում)  տեղադրում է **package.json** ֆայլի **dependencies**-ներում գրված բոլոր package-ները 
+**npm install** *package*  | local (նույն պրոյեկտի մեջ` **node_modules** folder-ում) տեղադրում է **package** անվանումով package-ը
+**npm install** *package@1.1.7*  | local (նույն պրոյեկտի մեջ` **node_modules** folder-ում) տեղադրում է ***1.1.7*** տարբերակի **package** անվանումով package-ը 
+**npm install** *package* **--save**  | local (նույն պրոյեկտի մեջ` **node_modules** folder-ում) տեղադրում է **package** անվանումով package-ը, **package.json**-ում ավելացնելով package-ի մասին ինֆորմացիա։
+**npm install** *package* **-g**  | global (node.js-ի folder-ում) տեղադրում է **package** անվանումով package-ը։
 
-### Ֆայլերի վերբեռնում
+### Package—ներից ջնջում
 Հրաման  | Նշանակություն
 ------------- | -------------
-**git pull**  | commit արված ֆայլերն ուղարկում է remote **master** branch
-**git pull** *origin* *branch*  | commit արված ֆայլերն ուղարկում է remote **branch** branch
-
-### Ֆայլերի ներբեռնում
-Հրաման  | Նշանակություն
-------------- | -------------
-**git push**  | remote **master** branch-ից բեռնում է փոփոխությունները  
-**git push** *origin* *branch*  | remote **branch** branch-ից բեռնում է փոփոխությունները  
-
-### Branch-ների փոխատեղում
-Հրաման  | Նշանակություն
-------------- | -------------
-**git checkout -b** *branch*  | ստեղծում է **branch** անվանումով նոր branch  
-**git checkout** *branch*  | անցում է կատարում առկա **branch** անվանումով branch  
-
-###Այլ հրամաններ
-Հրաման  | Նշանակություն
-------------- | -------------
-**git clone** *repositoryURL*  | կլոնավորում է **repositoryURL** հասցեից remote master branch
-**git commit -m** *'text'*  | ինդեքսավորված ֆայլերին տալիս է **'text'** մեկնաբանությունը  
-**git status**  | ցույց է տալիս ընթացիկ փոփոխված ֆայերի ցանկը  
-**git init**  | ինիցիալիզացնում նոր repository  
-**git diff**  | ցուցադրում է փոփոխությունները 
-**git branch**  | ցուցադրում է local branch-երի ցանկը
-
-## Պարզագույն հրամանների օգտագործման օրինակներ
-### Repository-ի բեռնում եւ նախապատրաստում աշխատանքի
-```bash
-git clone https://github.com/otanim/armenian-tutorials
-cd repository
-```
-### փոփոխությունների կատարում եւ վերբեռնում
-```bash
-git checkout -b ubunutu-commands
-git add .
-git commit -m 'new section create'  
-git push origin ubunutu-commands  
-```
+**npm uninstall** *package*  | local (նույն պրոյեկտի մեջ` **node_modules** folder-ից) ջնջում է **package** անվանումով package-ը
+**npm uninstall** *package* **-g**  | global (node.js-ի folder-ում) ջնջում է **package** անվանումով package-ը։
 
