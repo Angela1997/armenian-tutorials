@@ -4,4 +4,4 @@
 ## Ձեռնարկ
  - [**git**](https://github.com/otanim/armenian-tutorials/blob/master/git.md "git հրամաններ")
  - [**npm**](https://github.com/otanim/armenian-tutorials/blob/master/npm.md "npm հրամաններ")
- - [**WebStorm՝ արագ կանչման կոմբինացիաներ**](javascript:alert() "WebStorm արագ կանչման կոմբինացիաներ") *(շուտով)*
+ - [**WebStorm՝ արագ կանչման կոմբինացիաներ**](# "WebStorm արագ կանչման կոմբինացիաներ") *(շուտով)*
